@@ -9,6 +9,7 @@ const conectarDB = async () => {
             useUnifiedTopology: true,
             useFindAndModify: false
         })
+        console.log("Database conectada")
         
     } catch (error) {
         console.log('error de base de datos')
@@ -19,5 +20,5 @@ const conectarDB = async () => {
 
 }
 
-module.export = conectarDB
+module.exports = conectarDB
 
